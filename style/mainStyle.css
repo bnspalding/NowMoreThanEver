@@ -1,0 +1,72 @@
+#Text_Main {
+    width:40%;
+    height:100px;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+#Text_Bottom {
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+
+    margin:auto;
+}
+
+.Old_Text {
+    font-size:16px;
+    position:absolute;
+    color: #777;
+    transform:rotate(12deg);
+}
+
+#Menu_Button {
+    cursor: pointer;
+    position:absolute;
+    right: 8px;
+    top: 8px;
+
+    width: 50px;
+}
+
+.Menu_Bar {
+    width: 80%;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#Menu {
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    height:60px;
+    width:100%;
+
+    font-size:36px;
+}
+
+#Menu div {
+    width:50%;
+    text-align: center;
+    line-height: 60px;
+    margin:0;
+    float:left;
+}
+#Menu_ToTitle {
+    background-color:#BBB;
+}
+#Menu_ToRecord {
+    background-color:#999;
+}

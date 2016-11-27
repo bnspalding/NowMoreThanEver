@@ -1,0 +1,36 @@
+.TitleBlock {
+    cursor: pointer;
+
+    width: 50%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    line-height: 400px;
+    font-size:48px;
+
+    border: solid 2px black;
+    padding: 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#TitleBlock_1 {
+    border-top: none;
+    border-left: none;
+    background: #DDD;
+}
+#TitleBlock_2 {
+    border-top: none;
+    border-right: none;
+    background: #AAA;
+}
+#TitleBlock_3 {
+    border-bottom: none;
+    border-left: none;
+    background: #777;
+}
+#TitleBlock_4 {
+    border-bottom: none;
+    border-right: none;
+    background: #555;
+}
