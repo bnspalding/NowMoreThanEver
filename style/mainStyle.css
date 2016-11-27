@@ -1,4 +1,6 @@
 #Text_Main {
+    
+
     width:40%;
     height:100px;
     
@@ -9,11 +11,26 @@
     right: 0;
     margin: auto;
 
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
 }
 
+.fade_in {
+    animation-duration:3s;
+    animation-name: fadein;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 #Text_Bottom {
+    
     width: 80%;
     height: 400px;
     position: absolute;
@@ -25,6 +42,8 @@
 }
 
 .Old_Text {
+    animation-duration:2s;
+
     font-size:16px;
     position:absolute;
     color: #777;
