@@ -1,6 +1,5 @@
 #Text_Main {
     
-
     width:40%;
     height:100px;
     
@@ -13,6 +12,7 @@
 
     font-size: 28px;
     text-align: center;
+
 }
 
 .fade_in {
@@ -30,7 +30,8 @@
 }
 
 #Text_Bottom {
-    
+    animation-duration: 30s;
+
     width: 80%;
     height: 400px;
     position: absolute;
@@ -89,3 +90,7 @@
 #Menu_ToRecord {
     background-color:#999;
 }
+
+/*.y2016 {
+    color: darkgoldenrod;
+}*/
