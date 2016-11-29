@@ -63,7 +63,7 @@
 .Menu_Bar {
     width: 80%;
     height: 5px;
-    background-color: black;
+    background-color: #333;
     margin: 6px 0;
 }
 
@@ -75,6 +75,8 @@
     width:100%;
 
     font-size:36px;
+
+    border-bottom: 2px solid #333;
 }
 
 #Menu div {
@@ -85,10 +87,10 @@
     float:left;
 }
 #Menu_ToTitle {
-    background-color:#BBB;
+    background-color:#DDD;
 }
 #Menu_ToRecord {
-    background-color:#999;
+    background-color:#CCC;
 }
 
 /*.y2016 {

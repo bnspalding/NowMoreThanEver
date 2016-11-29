@@ -25,24 +25,28 @@ var Navigation = (function() {
             });
         });
         //Main Page to Title
-        document.getElementById("Menu_ToTitle").addEventListener("click", function() {
+        document.getElementById("Menu_ToTitle").addEventListener("click", function(e) {
+            e.stopPropagation();
             changePage("TitleScreen");
             document.getElementById("Menu").style.display = "none";
             reset();
         });
         //Main Page to Record
-        document.getElementById("Menu_ToRecord").addEventListener("click", function() {
+        document.getElementById("Menu_ToRecord").addEventListener("click", function(e) {
+            e.stopPropagation();
             changePage("Record");
             document.getElementById("Menu").style.display = "none";
             TextProcesses.createRecord();
         });
         //Record to Title
-        document.getElementById("Record_ToTitle").addEventListener("click", function() {
+        document.getElementById("Record_ToTitle").addEventListener("click", function(e) {
+            e.stopPropagation();
             changePage("TitleScreen");
             reset();
         })
         //Main Page Menu Toggle
-        document.getElementById("Menu_Button").addEventListener("click", function() {
+        document.getElementById("Menu_Button").addEventListener("click", function(e) {
+            e.stopPropagation();
             var menu = document.getElementById("Menu");
             toggleDisplay(menu);
         });

@@ -6,9 +6,11 @@
     float: left;
     text-align: center;
     line-height: 400px;
-    font-size:48px;
+    font-size:42px;
 
-    border: solid 2px black;
+    color: #222;
+
+    border: solid 2px #333;
     padding: 1em;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -17,20 +19,20 @@
 #TitleBlock_1 {
     border-top: none;
     border-left: none;
-    background: #DDD;
+    background: #EEE;
 }
 #TitleBlock_2 {
     border-top: none;
     border-right: none;
-    background: #AAA;
+    background: #DDD;
 }
 #TitleBlock_3 {
     border-bottom: none;
     border-left: none;
-    background: #777;
+    background: #CCC;
 }
 #TitleBlock_4 {
     border-bottom: none;
     border-right: none;
-    background: #555;
+    background: #BBB;
 }

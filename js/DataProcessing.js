@@ -16,7 +16,7 @@ var Data = (function() {
 
     var data = {
         phraseList: rawData.slice(),
-        categories: _categories,
+        categories: _categories.slice(),
         currentCategory: _categories[0],
         changeChance: _changeChance
     }
@@ -25,6 +25,9 @@ var Data = (function() {
         var filtered = data.phraseList.filter(function(phrase) {
             return phrase[property] == true;
         });
+        if(filtered.length < 1) {
+            console.log("unable to find phrases from filter - "+property);
+        }
         return filtered;
     }
 
@@ -43,10 +46,12 @@ var Data = (function() {
     }
 
     data.newCategory = function() {
-        this.currentCategory = Utility.getRandomElement(this.categories).slice();
+        this.currentCategory = Utility.getRandomElement(this.categories);
         possiblePhrases = filterPhrases(data.currentCategory);
-        if(possiblePhrases.length < 1) {
-            console.log("Unable to find possible phrases for new category - "+ this.currentCategory);
+        if(possiblePhrases.length < 1 && this.categories.length > 1) {
+            console.log("Cutting category for lack of phrases - remaining categories" + this.categories)
+            this.categories.splice(this.categories.indexOf(this.currentCategory), 1);
+            data.newCategory();
         }
     }
 
@@ -75,6 +80,7 @@ var Data = (function() {
 
     data.reset = function() {
         this.phraseList = _RawData.slice();
+        this.categories = _categories.slice();
     }
 
      return data;
