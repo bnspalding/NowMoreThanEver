@@ -70,6 +70,8 @@ var TextProcesses = (function() {
         Record = Record.filter(function(el) {
             return el != undefined;
         });
+        Record.reverse();
+
         Record.forEach(function(line) {
             var newElement;
             if (line.text) {
