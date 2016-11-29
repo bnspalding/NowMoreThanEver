@@ -22,6 +22,7 @@ var Data = (function() {
     }
 
     function filterPhrases(property) {
+        console.log(property);
         var filtered = data.phraseList.filter(function(phrase) {
             return phrase[property] == true;
         });
@@ -31,12 +32,12 @@ var Data = (function() {
         return filtered;
     }
 
-    var possiblePhrases = filterPhrases(data.currentCategory);
+    data.possiblePhrases = filterPhrases(data.currentCategory).slice();
     function selectTransition(phrase) {
         var possibleTransitions = [];
         for(var property in phrase) {
             if(phrase.hasOwnProperty(property)) {
-                if(property != "phrase" || property != data.currentCategory) {
+                if(property != "text" || property != data.currentCategory) {
                     if(property != "y2016") {
                         possibleTransitions.push(property);
                     }
@@ -47,10 +48,14 @@ var Data = (function() {
         return Utility.getRandomElement(possibleTransitions);
     }
 
-    data.newCategory = function() {
-        this.currentCategory = Utility.getRandomElement(this.categories);
-        possiblePhrases = filterPhrases(data.currentCategory);
-        if(possiblePhrases.length < 1 && this.categories.length > 1) {
+    data.newCategory = function(category) {
+        if(category) {
+            this.currentCategory = category;
+        } else {
+            this.currentCategory = Utility.getRandomElement(this.categories);
+        }
+        this.possiblePhrases = filterPhrases(data.currentCategory);
+        if(this.possiblePhrases.length < 1 && this.categories.length > 1) {
             console.log("Cutting category for lack of phrases - remaining categories" + this.categories)
             this.categories.splice(this.categories.indexOf(this.currentCategory), 1);
             data.newCategory();
@@ -59,18 +64,18 @@ var Data = (function() {
 
     data.getPhrase = function() {
         console.log(this.phraseList.length);
-         var phrase = Utility.getRandomElement(possiblePhrases);
-         possiblePhrases.splice(possiblePhrases.indexOf(phrase), 1);
+         var phrase = Utility.getRandomElement(this.possiblePhrases);
+         this.possiblePhrases.splice(this.possiblePhrases.indexOf(phrase), 1);
          //Ensure no repeating ever
          this.phraseList.splice(this.phraseList.indexOf(phrase), 1);
 
-         if(Math.random() < this.changeChance || possiblePhrases.length < 1) {
-             console.log("Remaining Phrases - "+ possiblePhrases.length);
+         if(Math.random() < this.changeChance || this.possiblePhrases.length < 1) {
+             console.log("Remaining Phrases - "+ this.possiblePhrases.length);
              var transition = selectTransition(phrase);
              if(transition == null) {
                  this.newCategory();
              } else {
-                 this.currentCategory = transition;
+                 this.newCategory(transition);
              }
              console.log("Category jump to - "+ this.currentCategory);
              Record.push("");
