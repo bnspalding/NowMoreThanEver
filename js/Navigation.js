@@ -58,7 +58,7 @@ var Navigation = (function() {
     }
 
     var returnObject = {
-        changePage: function() {changePage();},
+        changePage: function(target) {changePage(target);},
         toggleDisplay: function() {toggleDisplay();},
         setup: function() {setup();},
         reset: function() { localReset(); }
