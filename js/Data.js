@@ -690,7 +690,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "there is a need for bilateral and multilateral assistance to be coordinated for maximal effect, to avoid duplication and gaps, and to focus on measureable results",
+    "text": "there is a need for bilateral and multilateral assistance to be coordinated for maximal effect",
     "y2016": false,
     "need": true,
     "matters": false,
@@ -1771,7 +1771,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "we need wise and deep-hearted men to hold the crook and women and men of conviction to make formal pledges of lifelong service to the church's many vital ministries",
+    "text": "we need women and men of conviction to make formal pledges of lifelong service to the church's many vital ministries",
     "y2016": false,
     "need": true,
     "matters": false,
@@ -1978,29 +1978,6 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "making effective policy to cope with an increasingly complex and interconnected world requires integrating varied dimensions -- defense and diplomacy, finance and trade, the environment and homeland security, science and social policy -- into a coherent foreign policy",
-    "y2016": false,
-    "need": false,
-    "matters": false,
-    "fact": true,
-    "command": false,
-    "I": false,
-    "We": false,
-    "You": false,
-    "3rdPersonSingular": false,
-    "business": false,
-    "politics": true,
-    "popCulture": false,
-    "scienceTech": true,
-    "religion": false,
-    "education": false,
-    "global": true,
-    "community": false,
-    "personal": false,
-    "fashion": false,
-    "military": false
-  },
-  {
     "text": "we, as parents, must be aware of the importance of braille to children who are blind or visually impaired",
     "y2016": false,
     "need": false,
@@ -2043,29 +2020,6 @@ var _RawData = [
     "global": false,
     "community": false,
     "personal": false,
-    "fashion": false,
-    "military": false
-  },
-  {
-    "text": "attorneys anxious about billable requirements, maintain the same enthusiasm you had that first day of work (or at least the appearance of it)",
-    "y2016": false,
-    "need": false,
-    "matters": false,
-    "fact": false,
-    "command": true,
-    "I": false,
-    "We": false,
-    "You": false,
-    "3rdPersonSingular": false,
-    "business": true,
-    "politics": false,
-    "popCulture": false,
-    "scienceTech": false,
-    "religion": false,
-    "education": false,
-    "global": false,
-    "community": false,
-    "personal": true,
     "fashion": false,
     "military": false
   },
@@ -2185,7 +2139,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "our country is in need of leadership on a host of urgent environmental challenges that face our communities, our cities, our farms, and our rivers, streams, lakes, and oceans",
+    "text": "our country is in need of leadership on a host of urgent environmental challenges",
     "y2016": false,
     "need": true,
     "matters": false,
@@ -2668,7 +2622,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "cool' is a moving target",
+    "text": "'cool' is a moving target",
     "y2016": false,
     "need": false,
     "matters": false,
@@ -2820,29 +2774,6 @@ var _RawData = [
     "politics": false,
     "popCulture": false,
     "scienceTech": true,
-    "religion": false,
-    "education": true,
-    "global": false,
-    "community": false,
-    "personal": false,
-    "fashion": false,
-    "military": false
-  },
-  {
-    "text": "supervisors are faced with directing and supervising practicum and internship experiences with counseling interns who are effectively using Play Therapy, trying to use Play Therapy, or struggling to counsel children using traditional and often inappropriate, adult-therapy techniques",
-    "y2016": false,
-    "need": false,
-    "matters": false,
-    "fact": true,
-    "command": false,
-    "I": false,
-    "We": false,
-    "You": false,
-    "3rdPersonSingular": false,
-    "business": true,
-    "politics": false,
-    "popCulture": false,
-    "scienceTech": false,
     "religion": false,
     "education": true,
     "global": false,
@@ -3034,29 +2965,6 @@ var _RawData = [
     "personal": false,
     "fashion": false,
     "military": true
-  },
-  {
-    "text": "Pennsylvania keeps alive the memory of both Civil Wars, the war of the famous captains and the people whose stories are just beginning to be told, in unspoiled country-side, historic villages, and of course the brilliantly preserved battlefield itself",
-    "y2016": false,
-    "need": false,
-    "matters": false,
-    "fact": true,
-    "command": false,
-    "I": false,
-    "We": false,
-    "You": false,
-    "3rdPersonSingular": false,
-    "business": false,
-    "politics": false,
-    "popCulture": false,
-    "scienceTech": false,
-    "religion": false,
-    "education": false,
-    "global": true,
-    "community": true,
-    "personal": false,
-    "fashion": false,
-    "military": false
   },
   {
     "text": "the nation needs Iraqi professionals' experience and expertise",
@@ -3634,7 +3542,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "forward together' is needed",
+    "text": "'forward together' is needed",
     "y2016": true,
     "need": true,
     "matters": false,
@@ -4232,29 +4140,6 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "staff in Higher Education need to sharpen their focus on what they do and what they might do to enhance their teaching and support for students",
-    "y2016": true,
-    "need": false,
-    "matters": false,
-    "fact": false,
-    "command": true,
-    "I": false,
-    "We": false,
-    "You": false,
-    "3rdPersonSingular": false,
-    "business": false,
-    "politics": false,
-    "popCulture": false,
-    "scienceTech": false,
-    "religion": false,
-    "education": true,
-    "global": false,
-    "community": false,
-    "personal": false,
-    "fashion": false,
-    "military": false
-  },
-  {
     "text": "European parliaments need to legitimate their work and attempt to address the policy challenges faced by Europe",
     "y2016": true,
     "need": false,
@@ -4278,7 +4163,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "a large and growing number of children have the potential to develop bilingualism and biliteracy with the support of their families, communities, and teachers",
+    "text": "a large and growing number of children have the potential to develop bilingualism and biliteracy",
     "y2016": true,
     "need": false,
     "matters": false,
