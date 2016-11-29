@@ -37,7 +37,9 @@ var Data = (function() {
         for(var property in phrase) {
             if(phrase.hasOwnProperty(property)) {
                 if(property != "phrase" || property != data.currentCategory) {
-                    possibleTransitions.push(property);
+                    if(property != "y2016") {
+                        possibleTransitions.push(property);
+                    }
                 }
             }
         }
@@ -64,7 +66,7 @@ var Data = (function() {
 
          if(Math.random() < this.changeChance || possiblePhrases.length < 1) {
              console.log("Remaining Phrases - "+ possiblePhrases.length);
-             var transition = selectTransition();
+             var transition = selectTransition(phrase);
              if(transition == null) {
                  this.newCategory();
              } else {
