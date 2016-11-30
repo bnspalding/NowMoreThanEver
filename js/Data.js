@@ -2599,7 +2599,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "cool' is a moving target",
+    "text": "'cool' is a moving target",
     "y2016": false,
     "need": false,
     "matters": false,
@@ -3519,7 +3519,7 @@ var _RawData = [
     "military": false
   },
   {
-    "text": "forward together' is needed",
+    "text": "'forward together' is needed",
     "y2016": true,
     "need": true,
     "matters": false,
