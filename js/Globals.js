@@ -4,8 +4,8 @@ var timeBetweenCycles = 7; //seconds
 var cycleInterval;
 var resetTimeout;
 var resetTimeA = 60; //seconds
-var resetTimeB = 90; //seconds
-var autoBeginTime = 45;
+var resetTimeB = (5 * 60); //seconds
+var autoBeginTime = 60;
 
 var Record = [];
 

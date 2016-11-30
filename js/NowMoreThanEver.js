@@ -16,7 +16,7 @@ window.onload = function() {
 function ResetOnIdle() {
     console.log("resetting");
     reset();
-    resetTimeout = setTimeout(autoBegin, autoBeginTime * 1000);
+    
 }
 
 function MenuDropOnIdle() {
