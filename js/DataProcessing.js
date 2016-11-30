@@ -49,13 +49,17 @@ var Data = (function() {
     }
 
     data.newCategory = function(category) {
+        //If we provide a category (a transition from the current phrase), just use that category
         if(category) {
             this.currentCategory = category;
         } else {
+            //otherwise randomly select a new category
             this.currentCategory = Utility.getRandomElement(this.categories);
         }
+        //create a list of possible phrases defined by the current category
         this.possiblePhrases = filterPhrases(data.currentCategory);
         if(this.possiblePhrases.length < 1 && this.categories.length > 1) {
+            //When a category has been used up completely, cut it from the list of possible categories
             console.log("Cutting category for lack of phrases - remaining categories" + this.categories)
             this.categories.splice(this.categories.indexOf(this.currentCategory), 1);
             data.newCategory();
@@ -63,9 +67,8 @@ var Data = (function() {
     }
 
     data.getPhrase = function() {
-
+        // Possibly change categories (percent chance or no more available phrases)
          if(Math.random() < this.changeChance || this.possiblePhrases.length < 1) {
-             console.log("Remaining Phrases - "+ this.possiblePhrases.length);
              var transition = selectTransition(currentPhrase);
              if(transition == null) {
                  this.newCategory();
@@ -73,12 +76,14 @@ var Data = (function() {
                  this.newCategory(transition);
              }
              console.log("Category jump to - "+ this.currentCategory);
+             //Note a line break in the record to signify the jump.
              Record.push("");
          }
-
+         //Select a new phrase from the list of possible phrases
          var phrase = Utility.getRandomElement(this.possiblePhrases);
+         //remove the phrase from the current list of possible phrases
          this.possiblePhrases.splice(this.possiblePhrases.indexOf(phrase), 1);
-         //Ensure no repeating ever
+         //Additionally, ensure no repeating ever
          this.phraseList.splice(this.phraseList.indexOf(phrase), 1);
 
          return phrase;
