@@ -96,3 +96,8 @@
 /*.y2016 {
     color: darkgoldenrod;
 }*/
+
+#Time_Note {
+    font-size: 12px;
+    font-style: italic;
+}

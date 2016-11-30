@@ -66,7 +66,7 @@ var Data = (function() {
 
          if(Math.random() < this.changeChance || this.possiblePhrases.length < 1) {
              console.log("Remaining Phrases - "+ this.possiblePhrases.length);
-             var transition = selectTransition(phrase);
+             var transition = selectTransition(currentPhrase);
              if(transition == null) {
                  this.newCategory();
              } else {
