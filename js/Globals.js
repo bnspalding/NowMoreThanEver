@@ -13,5 +13,8 @@ function reset() {
     Data.reset();
     TextProcesses.reset();
     Navigation.reset();
+    if(resetTimeout) {
+        clearTimeout(resetTimeout);
+    }
     resetTimeout = setTimeout(autoBegin, autoBeginTime * 1000);
 }

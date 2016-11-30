@@ -63,11 +63,6 @@ var Data = (function() {
     }
 
     data.getPhrase = function() {
-        console.log(this.phraseList.length);
-         var phrase = Utility.getRandomElement(this.possiblePhrases);
-         this.possiblePhrases.splice(this.possiblePhrases.indexOf(phrase), 1);
-         //Ensure no repeating ever
-         this.phraseList.splice(this.phraseList.indexOf(phrase), 1);
 
          if(Math.random() < this.changeChance || this.possiblePhrases.length < 1) {
              console.log("Remaining Phrases - "+ this.possiblePhrases.length);
@@ -80,6 +75,11 @@ var Data = (function() {
              console.log("Category jump to - "+ this.currentCategory);
              Record.push("");
          }
+
+         var phrase = Utility.getRandomElement(this.possiblePhrases);
+         this.possiblePhrases.splice(this.possiblePhrases.indexOf(phrase), 1);
+         //Ensure no repeating ever
+         this.phraseList.splice(this.phraseList.indexOf(phrase), 1);
 
          return phrase;
 

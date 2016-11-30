@@ -51,9 +51,12 @@ var TextProcesses = (function() {
 
     text.cycleText = function() {
         text.addBottomText();
+        if(currentPhrase != "Now more than ever") {
+            Record.push(currentPhrase);
+        }
         currentPhrase = Data.getPhrase();
-        Record.push(currentPhrase);
         text.changeText();
+        
         if(cycleInterval) {
             clearInterval(cycleInterval);
         }

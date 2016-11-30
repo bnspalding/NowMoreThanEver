@@ -36,7 +36,14 @@ var Navigation = (function() {
             e.stopPropagation();
             changePage("Record");
             document.getElementById("Menu").style.display = "none";
+            if(currentPhrase != "Now more than ever") {
+                Record.push(currentPhrase);
+            }
             TextProcesses.createRecord();
+            if(cycleInterval) {
+                clearInterval(cycleInterval);
+            }
+            clearInterval(cycleInterval);
         });
         //Record to Title
         document.getElementById("Record_ToTitle").addEventListener("click", function(e) {
