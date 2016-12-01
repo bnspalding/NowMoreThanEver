@@ -4,10 +4,10 @@
 #Record_ToTitle{
     cursor: pointer;
     position:absolute;
-    top:8px;
+    top:18px;
     right: 8px;
     width: 80px;
     text-align: center;
     border: 2px black solid;
-    font-size:16px;
+    font-size:24px;
 }
